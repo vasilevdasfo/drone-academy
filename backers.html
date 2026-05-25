@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Founding Backers — Aeroles Drone Academy</title>
+<style>
+  :root{
+    --bg:#0a0e14; --panel:#11161f; --panel2:#161d28;
+    --ink:#eef3f8; --muted:#9fb0c3; --line:#23303f;
+    --acc:#3ec1ff; --acc2:#5ee0c0; --gold:#ffcf6b;
+    --maxw:920px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.6; font-size:17px; overflow-x:hidden}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 20px}
+  a{color:var(--acc)}
+
+  .hero{position:relative; min-height:64vh; display:flex; align-items:flex-end; overflow:hidden; background:#05080d}
+  .hero video{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:0}
+  .hero .ov{position:absolute; inset:0; z-index:1;
+    background:linear-gradient(180deg,rgba(10,14,20,.40) 0%,rgba(10,14,20,.6) 50%,rgba(10,14,20,.97) 100%)}
+  .hero .wrap{position:relative; z-index:2; padding-top:56px; padding-bottom:40px}
+  .badge{display:inline-block; font-size:13px; letter-spacing:.12em; text-transform:uppercase;
+    color:var(--gold); border:1px solid var(--line); border-radius:999px; padding:6px 14px; margin-bottom:16px;
+    background:rgba(17,22,31,.6); backdrop-filter:blur(6px)}
+  h1{font-size:clamp(28px,7vw,48px); line-height:1.08; letter-spacing:-.02em; font-weight:800}
+  .sub{color:#d7e2ee; font-size:clamp(16px,4.4vw,20px); margin-top:14px; max-width:620px}
+
+  section{padding:44px 0; border-top:1px solid var(--line)}
+  h2{font-size:clamp(22px,5.4vw,30px); letter-spacing:-.01em; margin-bottom:8px; font-weight:750}
+  .lead{color:var(--muted); margin-bottom:22px; font-size:16px}
+  .big{font-size:clamp(19px,5vw,23px); line-height:1.45; font-weight:600}
+  .big b{color:var(--acc2)}
+
+  .goalbar{margin-top:18px; background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:16px 18px}
+  .goalbar .amt{font-size:30px; font-weight:800; color:var(--acc2)}
+  .goalbar .note{color:var(--muted); font-size:14.5px; margin-top:2px}
+
+  .note-clean{background:rgba(94,224,192,.08); border:1px solid rgba(94,224,192,.30); border-radius:14px; padding:16px 18px; font-size:15.5px}
+  .note-clean b{color:var(--acc2)}
+
+  .tiers{display:grid; gap:16px; grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+  .tier{background:var(--panel); border:1px solid var(--line); border-radius:18px; padding:20px; display:flex; flex-direction:column}
+  .tier.feat{border-color:rgba(255,207,107,.55); background:linear-gradient(180deg,rgba(255,207,107,.07),var(--panel))}
+  .tier .price{font-size:30px; font-weight:800}
+  .tier .name{font-size:13px; letter-spacing:.1em; text-transform:uppercase; color:var(--acc); margin:2px 0 12px}
+  .tier.feat .name{color:var(--gold)}
+  .tier ul{list-style:none; display:grid; gap:9px; margin-top:4px}
+  .tier li{font-size:14.8px; padding-left:22px; position:relative; color:#dbe6f1}
+  .tier li::before{content:"✦"; position:absolute; left:0; color:var(--acc2)}
+  .tier .seats{margin-top:14px; font-size:12.5px; color:var(--muted); letter-spacing:.04em; text-transform:uppercase}
+
+  ul.clean{list-style:none; display:grid; gap:10px}
+  ul.clean li{background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:12px 14px; font-size:15.5px}
+  ul.clean li b{color:var(--acc2)}
+
+  .steps{counter-reset:s; display:grid; gap:12px}
+  .step{background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:14px 16px 14px 52px; position:relative; font-size:15.5px}
+  .step::before{counter-increment:s; content:counter(s); position:absolute; left:14px; top:12px;
+    width:26px; height:26px; border-radius:50%; background:var(--acc); color:#04121c; font-weight:800;
+    display:flex; align-items:center; justify-content:center; font-size:14px}
+
+  .cta{text-align:center; padding:48px 0 58px}
+  .cta h2{margin-bottom:10px}
+  .cta p{color:var(--muted); max-width:520px; margin:0 auto 8px}
+  .foot{color:#5e7187; font-size:13px; text-align:center; padding-bottom:34px}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <video autoplay muted loop playsinline preload="auto" poster="poster.jpg">
+    <source src="hero.mp4" type="video/mp4">
+  </video>
+  <div class="ov"></div>
+  <div class="wrap">
+    <span class="badge">Founding Backers · Phase 1</span>
+    <h1>Back the build.<br>Fly first.</h1>
+    <p class="sub">We're launching a drone academy + aerial film studio on a private cliff over the ocean. Help us start — and become a founding member with credits, perks and a referral cut.</p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <p class="big">We need <b>$5,000</b> to go live. It buys the one missing piece — a <b>cine lifter</b> (a heavy-lift drone that carries a real cinema camera) — so we can fly, film and teach from day one.</p>
+    <div class="goalbar">
+      <div class="amt">$5,000 · Phase 1</div>
+      <div class="note">Cine lifter + first builds. Everything else (FPV gear, 3D printers, tools, the location) we already have.</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="note-clean">
+      <b>This isn't an investment.</b> We're not selling shares and we don't promise any monthly returns. You're backing the launch and getting real value back — credits you can use or gift, founding status, and a commission on clients you bring. Simple and clean.
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Founding tiers</h2>
+    <p class="lead">A founding pass lands in your wallet — it's transferable, so you can use it or gift it.</p>
+    <div class="tiers">
+      <div class="tier">
+        <div class="price">$250</div>
+        <div class="name">Supporter</div>
+        <ul>
+          <li>$325 in flight / course credits</li>
+          <li>Giftable to a friend</li>
+          <li>Your name on the founders wall</li>
+        </ul>
+      </div>
+      <div class="tier">
+        <div class="price">$500</div>
+        <div class="name">Insider</div>
+        <ul>
+          <li>$700 in credits</li>
+          <li>A seat at a build-your-own-drone workshop</li>
+          <li>Priority booking</li>
+          <li>10% referral on clients you bring</li>
+        </ul>
+      </div>
+      <div class="tier feat">
+        <div class="price">$1,000</div>
+        <div class="name">★ Founding Backer</div>
+        <ul>
+          <li>$1,400 in credits (use or gift)</li>
+          <li>Founding status — name on the site</li>
+          <li>A custom 3D-printed mini-drone</li>
+          <li><b>15% referral</b> on every client you bring</li>
+        </ul>
+        <div class="seats">Only 5 seats</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Why back us</h2>
+    <ul class="clean">
+      <li><b>The location.</b> A private cliff over the ocean — in California almost nobody can legally fly on beaches or parks. We can.</li>
+      <li><b>The pilot.</b> 5+ years FPV &amp; cinematic — and he builds and 3D-prints his own drones.</li>
+      <li><b>Day-1 revenue.</b> Aerial video (real estate, events, social, corporate) pays from the first week.</li>
+      <li><b>Built-in marketing.</b> Every flight makes a clip with the ocean behind it — your credits double as content.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>How it works</h2>
+    <div class="steps">
+      <div class="step">Back us at your tier ($250 / $500 / $1,000).</div>
+      <div class="step">Get your founding pass — a token in your wallet, yours to use or gift.</div>
+      <div class="step">Spend the credits on flights, courses or workshops — or gift them.</div>
+      <div class="step">Bring friends as clients and earn your referral on every one.</div>
+    </div>
+  </div>
+</section>
+
+<div class="cta">
+  <div class="wrap">
+    <h2>Want in?</h2>
+    <p>Five founding seats at $1,000. Message Dmitrii to grab yours.</p>
+  </div>
+</div>
+
+<p class="foot">Founding Backers · Aeroles Drone Academy · SF coast · Phase 1</p>
+
+</body>
+</html>
